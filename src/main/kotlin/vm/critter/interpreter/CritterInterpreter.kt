@@ -26,7 +26,7 @@ fun interpret(program: CritterProgram) {
                     assigned = true
                 }
                 if (action != null) {
-                    println(message = "Final operation: ${action.name}.")
+                    println(message = action)
                     return
                 }
                 if (assigned) {

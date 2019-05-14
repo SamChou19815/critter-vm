@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
     for (filename in args) {
         try {
             val inputStream: InputStream = FileInputStream(filename)
+            println("Interpreting $filename")
             buildAndInterpret(inputStream = inputStream)
         } catch (e: FileNotFoundException) {
             println("$filename not found.")
